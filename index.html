@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estética facial com segurança em BH | Clínica Lumière</title>
+  <meta name="description" content="Avaliação personalizada para o seu tipo de pele, conduzida por profissionais certificados. Agende sua consulta na Clínica Lumière, em Belo Horizonte." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://clinicalumiere.com.br/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Estética facial com segurança em BH | Clínica Lumière" />
+  <meta property="og:description" content="Avaliação personalizada para o seu tipo de pele. Profissionais certificados em Belo Horizonte." />
+  <meta property="og:url" content="https://clinicalumiere.com.br/" />
+  <meta property="og:image" content="https://clinicalumiere.com.br/og-cover.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Schema LocalBusiness / MedicalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Clínica Lumière",
+    "image": "https://clinicalumiere.com.br/og-cover.webp",
+    "url": "https://clinicalumiere.com.br/",
+    "telephone": "+55-31-99999-0000",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Exemplo, 123 — Sala 4",
+      "addressLocality": "Belo Horizonte",
+      "addressRegion": "MG",
+      "postalCode": "30100-000",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -19.9167, "longitude": -43.9345 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00", "closes": "19:00"
+    }],
+    "medicalSpecialty": "Dermatology",
+    "areaServed": "Belo Horizonte"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#faf7f4; --ink:#2a2320; --muted:#6b615b;
+      --rose:#b76e79; --rose-dark:#8e515a; --sand:#f0e6df;
+      --white:#ffffff; --radius:16px; --max:1100px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg); color:var(--ink); line-height:1.6;
+      padding-bottom:76px; /* espaço sticky CTA mobile */
+    }
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--max);margin:0 auto;padding:0 20px}
+    section{padding:56px 0}
+    h1,h2,h3{line-height:1.25;font-weight:600}
+    h1{font-size:clamp(1.7rem,5vw,2.6rem)}
+    h2{font-size:clamp(1.35rem,3.6vw,2rem);margin-bottom:8px}
+    .eyebrow{color:var(--rose);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-bottom:10px}
+    .lead{color:var(--muted);max-width:620px}
+
+    /* Botões */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:15px 26px;border-radius:999px;font-weight:600;font-size:1rem;
+      border:2px solid transparent;cursor:pointer;transition:.2s}
+    .btn-primary{background:var(--rose);color:#fff}
+    .btn-primary:hover{background:var(--rose-dark)}
+    .btn-ghost{background:transparent;color:var(--rose-dark);border-color:var(--rose)}
+    .btn-ghost:hover{background:var(--sand)}
+    .btn-block{width:100%}
+
+    /* HERO */
+    .hero{padding-top:40px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+    .hero h1 span{color:var(--rose)}
+    .hero .lead{margin:16px 0 24px}
+    .hero-actions{display:flex;flex-direction:column;gap:12px}
+    @media(min-width:520px){.hero-actions{flex-direction:row}}
+
+    /* TRUST BAR */
+    .trust{background:var(--sand);padding:20px 0}
+    .trust-grid{display:grid;grid-template-columns:1fr;gap:14px;text-align:center}
+    @media(min-width:600px){.trust-grid{grid-template-columns:repeat(3,1fr)}}
+    .trust-item strong{display:block;font-size:1.05rem;color:var(--ink)}
+    .trust-item span{font-size:.9rem;color:var(--muted)}
+
+    /* PROCEDIMENTOS */
+    .procedures{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px}
+    @media(min-width:768px){.procedures{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--white);border-radius:var(--radius);padding:24px;
+      box-shadow:0 6px 20px rgba(42,35,32,.06);display:flex;flex-direction:column;gap:8px}
+    .card h3{font-size:1.2rem;color:var(--rose-dark)}
+    .card .benefit{font-weight:500}
+    .card .detail{font-size:.9rem;color:var(--muted)}
+
+    /* PROVA SOCIAL */
+    .testimonials{display:grid;grid-template-columns:1fr;gap:16px;margin-top:28px}
+    @media(min-width:768px){.testimonials{grid-template-columns:repeat(3,1fr)}}
+    .testimonial{background:var(--white);border-radius:var(--radius);padding:22px;
+      border-left:4px solid var(--rose)}
+    .testimonial p{font-style:italic;color:var(--ink)}
+    .testimonial cite{display:block;margin-top:12px;font-style:normal;font-size:.85rem;color:var(--muted)}
+
+    /* ANTES E DEPOIS */
+    .ba-note{background:var(--sand);border-radius:12px;padding:16px;font-size:.85rem;color:var(--muted);margin-top:16px}
+    .ba-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:24px}
+    @media(min-width:700px){.ba-grid{grid-template-columns:repeat(2,1fr)}}
+    .ba-card{background:var(--white);border-radius:var(--radius);padding:18px;box-shadow:0 6px 20px rgba(42,35,32,.06)}
+    .ba-frames{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .ba-frame{aspect-ratio:1/1;background:linear-gradient(135deg,#f5ece6,#e8d9cf);
+      border-radius:10px;display:flex;align-items:center;justify-content:center;
+      font-size:.75rem;color:var(--muted);text-align:center;padding:8px}
+    .ba-card figcaption{margin-top:10px;font-size:.78rem;color:var(--muted);line-height:1.4}
+
+    /* FORM */
+    .contact{background:var(--white)}
+    .contact-box{background:var(--bg);border-radius:var(--radius);padding:28px 22px;
+      max-width:560px;margin:0 auto;box-shadow:0 6px 24px rgba(42,35,32,.06)}
+    .field{margin-bottom:16px}
+    .field label{display:block;font-size:.85rem;font-weight:600;margin-bottom:6px}
+    .field input,.field select{width:100%;padding:13px 14px;border:1.5px solid #e2d6cd;
+      border-radius:10px;font-size:1rem;background:#fff;transition:border .2s}
+    .field input:focus,.field select:focus{outline:none;border-color:var(--rose)}
+    .field small{display:block;color:var(--muted);font-size:.75rem;margin-top:4px}
+    .form-msg{font-size:.9rem;margin-top:10px;display:none}
+    .form-msg.error{color:#b3261e;display:block}
+    .form-msg.success{color:#2e7d32;display:block}
+
+    /* STICKY CTA MOBILE */
+    .sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:50;
+      display:flex;gap:10px;padding:12px 16px;background:rgba(255,255,255,.97);
+      border-top:1px solid #eee;box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+    .sticky-cta .btn{flex:1;padding:13px 10px;font-size:.9rem}
+    @media(min-width:480px){.sticky-cta{display:none} body{padding-bottom:0}}
+
+    /* CTA FINAL */
+    .final-cta{background:var(--rose);color:#fff;text-align:center}
+    .final-cta h2{color:#fff}
+    .final-cta p{max-width:540px;margin:10px auto 24px;color:#fbeef1}
+    .final-cta .btn-primary{background:#fff;color:var(--rose-dark)}
+
+    /* FOOTER */
+    footer{background:#241d1a;color:#c9bdb6;font-size:.85rem;padding:32px 0;text-align:center}
+    footer a{color:#e8b9c0}
+    .skip{position:absolute;left:-999px}
+    .skip:focus{left:12px;top:12px;background:#fff;padding:10px;border-radius:8px;z-index:99}
+  </style>
+</head>
+<body>
+
+<a href="#agendar" class="skip">Ir para o formulário de agendamento</a>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <p class="eyebrow">Clínica Lumière • Belo Horizonte</p>
+    <h1>Cuide da sua pele com <span>segurança e naturalidade</span>, respeitando o seu tempo.</h1>
+    <p class="lead">Executado por profissionais certificados. Cada plano é personalizado para o seu estado de pele — não é um procedimento padrão.</p>
+    <div class="hero-actions">
+      <a href="#agendar" class="btn btn-primary">Agendar avaliação</a>
+      <a href="#procedimentos" class="btn btn-ghost">Conhecer procedimentos</a>
+    </div>
+  </div>
+</header>
+
+<!-- TRUST BAR -->
+<section class="trust" aria-label="Sinais de confiança">
+  <div class="container trust-grid">
+    <div class="trust-item"><strong>Profissionais certificados</strong><span>Equipe com formação e registro ativos.</span></div>
+    <div class="trust-item"><strong>Avaliação personalizada</strong><span>Cada plano nasce do seu tipo de pele.</span></div>
+    <div class="trust-item"><strong>Acompanhamento próximo</strong><span>Orientação antes, durante e depois.</span></div>
+  </div>
+</section>
+
+<!-- PROCEDIMENTOS -->
+<section id="procedimentos">
+  <div class="container">
+    <p class="eyebrow">Procedimentos</p>
+    <h2>Opções pensadas para a sua pele</h2>
+    <p class="lead">Toda indicação passa por avaliação prévia. Os procedimentos abaixo são exemplos fictícios de portfólio.</p>
+    <div class="procedures">
+      <article class="card">
+        <h3>Limpeza de pele profunda</h3>
+        <p class="benefit">Ajuda a remover impurezas e a deixar a pele com sensação de frescor.</p>
+        <p class="detail">Protocolo com extração cuidadosa e hidratação calmante ao final.</p>
+      </article>
+      <article class="card">
+        <h3>Tratamento para manchas</h3>
+        <p class="benefit">Focado em uniformizar o tom da pele com acompanhamento próximo.</p>
+        <p class="detail">Plano individualizado, com fotoproteção e reavaliação periódica.</p>
+      </article>
+      <article class="card">
+        <h3>Estímulo de colágeno</h3>
+        <p class="benefit">Voltado à firmeza e à textura da pele, com indicação personalizada.</p>
+        <p class="detail">Técnica escolhida conforme avaliação e histórico de cada pessoa.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROVA SOCIAL -->
+<section style="background:var(--sand)">
+  <div class="container">
+    <p class="eyebrow">Depoimentos</p>
+    <h2>O que dizem quem passou por aqui</h2>
+    <p class="lead">Relatos fictícios para fins de portfólio. Resultados variam de pessoa para pessoa.</p>
+    <div class="testimonials">
+      <blockquote class="testimonial">
+        <p>“Me senti ouvida desde a primeira conversa. Explicaram cada etapa e o que eu podia esperar.”</p>
+        <cite>— Mariana, 34 anos (fictício)</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>“Gostei do cuidado em não prometer milagre. Foi tudo muito transparente e tranquilo.”</p>
+        <cite>— Camila, 29 anos (fictício)</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>“O acompanhamento depois fez diferença pra mim. Me senti segura em cada retorno.”</p>
+        <cite>— Renata, 41 anos (fictício)</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ANTES E DEPOIS -->
+<section>
+  <div class="container">
+    <p class="eyebrow">Antes e depois</p>
+    <h2>Transparência na apresentação</h2>
+    <p class="lead">Padrão ético de registro: mesma iluminação, mesmo ângulo, sem edição de pele.</p>
+    <div class="ba-grid">
+      <figure class="ba-card">
+        <div class="ba-frames">
+          <div class="ba-frame">Antes<br>(placeholder)</div>
+          <div class="ba-frame">Depois<br>(placeholder)</div>
+        </div>
+        <figcaption><strong>Intervalo:</strong> 30 dias • <strong>Iluminação:</strong> natural difusa • <strong>Legenda:</strong> “Imagem ilustrativa de portfólio; resultado individual varia.”</figcaption>
+      </figure>
+      <figure class="ba-card">
+        <div class="ba-frames">
+          <div class="ba-frame">Antes<br>(placeholder)</div>
+          <div class="ba-frame">Depois<br>(placeholder)</div>
+        </div>
+        <figcaption><strong>Intervalo:</strong> 60 dias • <strong>Iluminação:</strong> estúdio fixo • <strong>Legenda:</strong> “Imagem ilustrativa de portfólio; resultado individual varia.”</figcaption>
+      </figure>
+    </div>
+    <p class="ba-note">As imagens reais devem ser autorizadas por escrito, sem retoque que altere a pele, e sempre acompanhadas do intervalo de tempo e da frase de variabilidade individual.</p>
+  </div>
+</section>
+
+<!-- FORMULÁRIO -->
+<section id="agendar" class="contact">
+  <div class="container">
+    <p class="eyebrow">Agendamento</p>
+    <h2>Agende sua avaliação</h2>
+    <p class="lead" style="margin-bottom:24px">Preencha os campos abaixo. Retornamos para confirmar horário e tirar dúvidas.</p>
+    <div class="contact-box">
+      <form id="booking-form" novalidate>
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" required minlength="2" />
+        </div>
+        <div class="field">
+          <label for="whatsapp">WhatsApp</label>
+          <input type="tel" id="whatsapp" name="whatsapp" inputmode="tel" autocomplete="tel"
+                 placeholder="(31) 99999-0000" required />
+        </div>
+        <div class="field">
+          <label for="procedimento">Interesse</label>
+          <select id="procedimento" name="procedimento" required>
+            <option value="">Selecione…</option>
+            <option>Limpeza de pele profunda</option>
+            <option>Tratamento para manchas</option>
+            <option>Estímulo de colágeno</option>
+            <option>Não sei ainda — quero orientação</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="periodo">Melhor período</label>
+          <select id="periodo" name="periodo" required>
+            <option value="">Selecione…</option>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Fim da tarde</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="consent">Consentimento</label>
+          <select id="consent" name="consent" required>
+            <option value="">Selecione…</option>
+            <option value="sim">Autorizo o contato para agendamento</option>
+          </select>
+          <small>Usamos seus dados apenas para responder ao seu pedido.</small>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Quero agendar</button>
+        <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Vamos conversar sobre a sua pele?</h2>
+    <p>Sem pressa e sem compromisso. A avaliação é o primeiro passo para um plano seguro e personalizado.</p>
+    <a href="#agendar" class="btn btn-primary">Agendar minha avaliação</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p><strong>Clínica Lumière</strong> — site fictício de portfólio. Rua Exemplo, 123 — Belo Horizonte/MG.</p>
+    <p style="margin-top:8px">Este site não substitui consulta médica. Resultados variam individualmente. <a href="#agendar">Agende uma avaliação</a>.</p>
+  </div>
+</footer>
+
+<!-- STICKY CTA MOBILE -->
+<div class="sticky-cta" role="complementary" aria-label="Ações rápidas">
+  <a href="#agendar" class="btn btn-primary">Agendar avaliação</a>
+  <a href="https://wa.me/5531999990000" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var form = document.getElementById('booking-form');
+  var msg  = document.getElementById('form-msg');
+
+  // Máscara simples de WhatsApp
+  var wa = document.getElementById('whatsapp');
+  wa.addEventListener('input', function(){
+    var v = wa.value.replace(/\D/g,'').slice(0,11);
+    if(v.length > 6) wa.value = '('+v.slice(0,2)+') '+v.slice(2,7)+'-'+v.slice(7);
+    else if(v.length > 2) wa.value = '('+v.slice(0,2)+') '+v.slice(2);
+    else wa.value = v;
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    msg.className = 'form-msg';
+    msg.textContent = '';
+
+    var nome = form.nome.value.trim();
+    var tel  = form.whatsapp.value.replace(/\D/g,'');
+    var proc = form.procedimento.value;
+    var per  = form.periodo.value;
+    var cons = form.consent.value;
+
+    if(nome.length < 2){ return showError('Informe seu nome.'); }
+    if(tel.length < 10){ return showError('Informe um WhatsApp válido com DDD.'); }
+    if(!proc){ return showError('Escolha o interesse.'); }
+    if(!per){ return showError('Escolha o melhor período.'); }
+    if(cons !== 'sim'){ return showError('Precisamos do seu consentimento para contato.'); }
+
+    // Simula envio assíncrono
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true; btn.textContent = 'Enviando…';
+
+    setTimeout(function(){
+      // Rastreamento de conversão (ex.: GA4 / Meta Pixel)
+      // window.dataLayer = window.dataLayer || [];
+      // window.dataLayer.push({event:'generate_lead', form:'agendamento'});
+      // if(typeof fbq === 'function') fbq('track','Lead');
+
+      msg.className = 'form-msg success';
+      msg.textContent = 'Recebemos seu pedido! Vamos entrar em contato para confirmar o horário.';
+      form.reset();
+      btn.disabled = false; btn.textContent = 'Quero agendar';
+
+      // Redirecionamento para página de agradecimento (exemplo)
+      // setTimeout(function(){ window.location.href = '/obrigado/'; }, 1200);
+    }, 900);
+  });
+
+  function showError(text){
+    msg.className = 'form-msg error';
+    msg.textContent = text;
+    return false;
+  }
+})();
+</script>
+</body>
+</html>
